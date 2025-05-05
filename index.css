@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo {
+    height: 10px;
+  }
+  .hero {
+    background-color: #e7f5e6;
+    padding: 2rem 0;
+    text-align: center;
+  }
+ .form-card {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  #medios-pago img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#medios-pago img:hover {
+  transform: scale(1.05);
+}
+.card {
+    max-width: 280px;
+    margin: auto;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .carousel-item img {
+    border-radius: 10px;
+  }
+
+  .btn-primary {
+    font-weight: 500;
+  }

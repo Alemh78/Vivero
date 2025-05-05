@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - VerdeMadre</title>
+  <link rel="shortcut icon" href="./assets-imagenes/logo.jpg" type="Logo del vivero VerdeMadre"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav id="navbar" class="navbar px-3 mb-3 fw-bold p-3 mb-2 bg-success text-white">
+        <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets-imagenes/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+              VerdeMadre
+            </a>
+          </nav>
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a class="nav-link text-white" href="index.html">INICIO</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="perfil.html">PERFIL</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="productos.html">PRODUCTOS</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="contacto.html">CONTACTO</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link position-relative dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./assets-imagenes/carrito.jpg" alt="Carrito" width="50" height="50">
+          <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end p-3" style="min-width: 300px;">
+          <li>
+            <strong>Carrito:</strong>
+            <ul id="lista-carrito" class="list-group mb-2"></ul>
+          </li>
+          <li>
+            <p class="mb-0"><strong>Total: $<span id="total">0</span></strong></p>
+          </li>
+          <li>
+            <button id="vaciar-carrito" class="btn btn-sm btn-danger mt-2 w-100">Vaciar carrito</button>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    </ul>
+  </nav>
+
+  <section id="carrito" class="container py-5">
+    <h2 class="text-center mb-4">Productos</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+     <!-- Producto 1 -->
+     <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="./assets-imagenes/suculenta.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Planta suculenta">
+          <div class="card-body d-flex flex-column justify-content-between text-center">
+            <div>
+              <h5 class="card-title">Suculentas</h5>
+              <p class="card-text">$1200</p>
+            </div>
+            <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Suculenta" data-precio="1200" data-id="suculenta">
+              Agregar al carrito
+            </button>
+          </div>
+        </div>
+      </div>
+  
+  <!-- Producto 2 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/helechos.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Planta suculenta">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Helecho</h5>
+          <p class="card-text">$2500</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="helecho" data-precio="2500" data-id="helecho">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Producto 3 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/ARBOLES FRUTALES.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Planta suculenta">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Arboles Frutales</h5>
+          <p class="card-text">$12000</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="arbol" data-precio="12000" data-id="arbol frutal">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+   <!-- Producto 4 -->
+   <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/macetas de ceramica.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Maceta de cerámica">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Maceta de cerámica</h5>
+          <p class="card-text">$1800</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Maceta cerámica" data-precio="1800" data-id="maceta-ceramica">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto 5 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/Regadera metalica.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Regadera metálica">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Regadera metálica</h5>
+          <p class="card-text">$3500</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Regadera" data-precio="3500" data-id="regadera">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto 6 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/Pala de jardineria.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Pala de jardinería">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Pala de jardinería</h5>
+          <p class="card-text">$1200</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Pala" data-precio="1200" data-id="pala">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto 7 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/Plantas de lavanda (2).jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Lavanda">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Lavanda</h5>
+          <p class="card-text">$1500</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Lavanda" data-precio="1500" data-id="lavanda">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto 8 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/Rosales.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Rosal en flor">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Rosal</h5>
+          <p class="card-text">$2700</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Rosal" data-precio="2700" data-id="rosal">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Producto 9 -->
+  <div class="col">
+    <div class="card h-100 shadow-sm">
+      <img src="./assets-imagenes/Tierra abonada.jpg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Tierra abonada">
+      <div class="card-body d-flex flex-column justify-content-between text-center">
+        <div>
+          <h5 class="card-title">Tierra abonada</h5>
+          <p class="card-text">$3000</p>
+        </div>
+        <button class="btn btn-primary position-relative agregar-carrito mt-3" data-nombre="Tierra" data-precio="1000" data-id="tierra-abonada">
+          Agregar al carrito
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+  <!-- Sección MEDIOS DE PAGO -->
+<section id="medios-pago" class="container py-5">
+    <h3 class="text-center mb-4">Medios de Pago</h3>
+    <div class="row text-center">
+      <div class="col-md-3 col-6 mb-4  fw-bold ">
+        <img src="./assets-imagenes/visa.jpg" alt="Visa" class="img-fluid" style="max-height: 50px;">
+        <p>Visa</p>
+      </div>
+      <div class="col-md-3 col-6 mb-4">
+        <img src="./assets-imagenes/mastercard.jpg" alt="MasterCard" class="img-fluid" style="max-height: 50px;">
+        <p>MasterCard</p>
+      </div>
+      <div class="col-md-3 col-6 mb-4">
+        <img src="./assets-imagenes/mercado pago.jpg" alt="MercadoPago" class="img-fluid" style="max-height: 50px;">
+        <p>MercadoPago</p>
+      </div>
+      <div class="col-md-3 col-6 mb-4">
+        <img src="./assets-imagenes/efectivo.jpg" alt="Efectivo" class="img-fluid" style="max-height: 50px;">
+        <p>Efectivo</p>
+      </div>
+    </div>
+  </section>  
+
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="bg-success text-black text-center">
+      <p>© 2025 Ante cualquier duda o consulta</p>
+      <p>Email: <a class="text-black" href="mailto:verdemadre@gmail.com">verdemadre@gmail.com</a></p>
+      <p>Teléfono: +54 911 1176-763030</p>
+      <p>Ubicación: Buenos Aires - Ezeiza</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

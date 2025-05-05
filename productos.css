@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.card {
+    max-width: 280px;
+    margin: auto;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .carousel-item img {
+    border-radius: 10px;
+  }
+
+  .btn-primary {
+    font-weight: 500;
+  }

@@ -10,14 +10,17 @@
 <body class="d-flex flex-column min-vh-100">
   <div class="main-content flex-grow-1">
     <!-- Barra de navegación -->
-    <nav id="navbar" class="navbar px-3 mb-3  fw-bold p-3 mb-2 bg-success text-white">
-        <nav class="navbar navbar-light">
-            <a class="navbar-brand" href="./index.html">
-                <img src="./assets-imagenes/logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-              VerdeMadre
-            </a>
-          </nav>
-      <ul class="nav">
+    <nav class="navbar navbar-expand-lg bg-success text-white px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="./index.html">
+          <img src="./assets-imagenes/logo.jpg" width="30" height="30" class="d-inline-block align-top me-2" alt="">
+          VerdeMadre
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
+          <ul class="navbar-nav navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link text-white" href="index.html">INICIO</a>
         </li>
